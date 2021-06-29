@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #313131;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*======================================
+                HEADER
+========================================*/
+
+header,
+footer {
+  text-align: center;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 22px;
+  padding: 10px 0;
+  background: #ffffff;
+  color: #3d3d3d;
+}
+
+/*======================================
+                LATEST
+========================================*/
+
+.home-latest {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.home-latest .item {
+  width: 25%;
+  flex-grow: 1;
+}
+
+.home-latest .item .image_cover {
+  position: relative;
+  background-size: cover !important;
+  height: 400px;
+}
+.home-latest .item .description {
+  position: absolute;
+  bottom: 0px;
+}
+.home-latest .item .description span {
+  background: #353535;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+}
+
+.home-latest .item .description div {
+  padding: 10px;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(55, 55, 55, 0.51);
+  width: 40%;
+}
+
+/*======================================
+                OTHER NEWS
+========================================*/
+
+.other-news {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.other-news h2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 35px;
+  margin: 30px 0px;
+}
+
+.other-news-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.other-news-items .item {
+  flex-grow: 1;
+  width: 33%;
+  margin: 10px;
+  background: #ffffff;
+  display: flex;
+  border: 1px solid #e3e3e3;
+}
+
+.other-news-items .item .left-content {
+  flex-grow: 1;
+  width: 100px;
+  height: 120px;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.other-news-items .item .right-content {
+  width: 80%;
+  height: 120px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+.other-news-items .item .right-content h3 {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.other-news-items .item .right-content .category {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: #2d2d2d;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.other-news-items .item .right-content .tags {
+  position: absolute;
+  bottom: 6px;
+}
+
+.other-news-items .item .right-content .tags span {
+  margin-right: 15px;
+  font-size: 12px;
+  color: #607d8b;
+}
