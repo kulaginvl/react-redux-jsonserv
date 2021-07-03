@@ -7,7 +7,6 @@ import OtherNews from './OtherNews';
 
 const Home = () => {
   const state = useSelector((state) => ({ ...state }));
-  console.log('state', state);
   let dispatch = useDispatch();
 
   React.useEffect(() => {

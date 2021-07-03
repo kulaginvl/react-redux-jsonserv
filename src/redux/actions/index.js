@@ -26,16 +26,22 @@ export function getSubData(id) {
 }
 
 export function handleSubLikes(newLikes, id) {
-  const request = axios(`{URL}/${id}`, {
+  const request = axios(`${URL}/${id}`, {
     method: 'PATCH',
     headers: {
       Accept: 'aplication/json',
-      'Content-type': 'aplication/json',
+      'Content-type': 'application/json',
     },
     data: JSON.stringify({ likes: newLikes }),
   }).then((response) => response.data);
   return {
     type: HANDLE_LIKES_SUB,
     payload: request,
+  };
+}
+export function clearSubData() {
+  return {
+    type: CLEAR_SUB_DATA,
+    payload: null,
   };
 }

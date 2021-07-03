@@ -1,9 +1,25 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 
-const Subject = () => {
-  return <div></div>;
+const Likes = ({ addLike, likes, dislikes }) => {
+  return (
+    <div className="addlikes-wrapper">
+      <h3>You like this article ?</h3>
+      <div className="addlikes-container">
+        <div className="btn like" onClick={() => addLike('ADD')}>
+          <div className="hits">{likes}</div>
+          <div className="icon">
+            <i className="fa fa-thumbs-up" />
+          </div>
+        </div>
+        <div className="btn dislike" onClick={() => addLike('REMOVE')}>
+          <div className="hits">{dislikes}</div>
+          <div className="icon">
+            <i className="fa fa-thumbs-down" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Subject;
+export default Likes;

@@ -6,7 +6,7 @@ const showOther = ({ otherNews }) => {
     <>
       {otherNews
         ? otherNews.map((item) => (
-            <Link to={`/article/${item.id}`} key={item.id} className="item">
+            <Link to={`/articles/${item.id}`} key={item.id} className="item">
               <div
                 className="left-content"
                 style={{ background: `url(/images/articles/${item.img})` }}></div>
